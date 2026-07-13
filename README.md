@@ -50,6 +50,7 @@ sind **über je ein Potentiometer getrennt einstellbar**.
 
 | Dokument | Inhalt |
 |----------|--------|
+| [hardware/BatterySwitch.kicad_sch](hardware/BatterySwitch.kicad_sch) | **KiCad-Schaltplan** (KiCad 6/7/8/9, direkt zu öffnen) — Vorschau: [hardware/preview.svg](hardware/preview.svg) |
 | [docs/schaltung.md](docs/schaltung.md) | Vollständige Schaltungsbeschreibung, Schaltbilder, Dimensionierung und Formeln |
 | [docs/stueckliste.md](docs/stueckliste.md) | Stückliste (BOM) mit Bauteilwerten und Alternativen |
 | [docs/aufbau-und-abgleich.md](docs/aufbau-und-abgleich.md) | Aufbauhinweise, Verkabelung, Nullabgleich und Einstellen von Δ1/Δ2 |

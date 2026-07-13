@@ -62,6 +62,8 @@ Auslegung für **58 … 72 V Systemspannung, 40 A Dauerstrom**.
 
 | Bezeichner | Bauteil | Anmerkung |
 |------------|---------|-----------|
+| X1, X2 | Super-Soco-Gegenstecker (Akku-Seite), 2× | Anschluss der beiden Akkus an den Umschalter |
+| X3 | Super-Soco-Batteriestecker (Fahrzeug-Seite), 1× | Ausgang des Umschalters zum Fahrzeug/Controller. **Strombelastbarkeit der Stecker für 40 A Dauer prüfen** – Kontakte ggf. verlöten statt crimpen |
 | JP1, JP2 | Jumper / Stiftleiste 2-polig | trennen die Δ-Einspeisungen für den Nullabgleich |
 | F1, F2 | Sicherung 50 A, **≥ 80 V DC** | z. B. gPV 14×51 mm oder NH00 mit Halter. **Kfz-Sicherungen (MIDI/MEGA/ANL) sind nur bis 32 V zugelassen – ungeeignet!** Direkt am Pluspol des jeweiligen Akkus |
 | F3, F4 | Feinsicherung 100 mA flink + Halter | in den beiden Sense-Leitungen, nahe am Batteriepol |
