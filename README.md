@@ -51,6 +51,7 @@ sind **über je ein Potentiometer getrennt einstellbar**.
 | Dokument | Inhalt |
 |----------|--------|
 | [hardware/BatterySwitch.kicad_sch](hardware/BatterySwitch.kicad_sch) | **KiCad-Schaltplan** (KiCad 6/7/8/9, direkt zu öffnen) — Vorschau: [hardware/preview.svg](hardware/preview.svg) |
+| [hardware/BatterySwitch_Steuerplatine.kicad_pcb](hardware/BatterySwitch_Steuerplatine.kicad_pcb) | **Platinenlayout Steuerplatine** (112×92 mm, 2 Lagen, geroutet) — Vorschau: [hardware/preview_pcb.svg](hardware/preview_pcb.svg) |
 | [docs/schaltung.md](docs/schaltung.md) | Vollständige Schaltungsbeschreibung, Schaltbilder, Dimensionierung und Formeln |
 | [docs/stueckliste.md](docs/stueckliste.md) | Stückliste (BOM) mit Bauteilwerten und Alternativen |
 | [docs/bestellliste.md](docs/bestellliste.md) | Bestellliste mit Händlern, Links und ca.-Preisen inkl. MwSt |

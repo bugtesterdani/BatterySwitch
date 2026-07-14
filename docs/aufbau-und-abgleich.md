@@ -17,7 +17,12 @@
 - **Verdrahtungsinduktivität klein halten:** kurze Wege zwischen Sicherung,
   Schalter und Last. Bei langen Batterieleitungen je Akku 220 µF/100 V direkt
   am Schalter-Eingang vorsehen (Abschalt-Spannungsspitzen!).
-- Steuerteil (LM393, Regler, Transistoren) auf normalem Lochraster; Verbindungen
+- Steuerteil: entweder auf Lochraster oder mit dem fertigen **Platinenlayout**
+  [hardware/BatterySwitch_Steuerplatine.kicad_pcb](../hardware/BatterySwitch_Steuerplatine.kicad_pcb)
+  (112×92 mm, 2 Lagen, Unterseite = GND-Zone — vor der Fertigung in KiCad
+  öffnen, mit `B` die Zone füllen und den DRC laufen lassen). Anschluesse über
+  Schraubklemmen: X4 = B1F/B2F/GND, X5 = Sense S1/S2, X6 = Gate/Source beider
+  MOSFET-Paare, X7 = die beiden Frontplatten-Potis. Verbindungen
   zum Leistungsteil sind nur die zwei Gate/Source-Paare der VOM1271-Ausgänge
   und Masse. Die VOM1271-Ausgangsleitungen kurz halten und verdrillen.
 - **Beide Sense-Abgriffe** (über F3/F4 100 mA) **direkt an der Anschlussklemme
