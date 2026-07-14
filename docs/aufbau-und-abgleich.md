@@ -12,7 +12,7 @@
   über Lötaugen führen, sondern massive Drähte/Kupferschienen direkt an die
   MOSFET-Beine löten.
 - MOSFETs auf gemeinsamen Kühlkörper montieren. **Achtung:** Die Kühlfahne des
-  TO-220 ist Drain – Glimmerscheibe/Silikonpad + Isolierbuchse verwenden. Der
+  TO-247 ist Drain – Glimmerscheibe/Silikonpad + Isolierbuchse verwenden. Der
   Kühlkörper führt sonst 72 V bzw. schließt BAT1, BAT2 und Last kurz.
 - **Verdrahtungsinduktivität klein halten:** kurze Wege zwischen Sicherung,
   Schalter und Last. Bei langen Batterieleitungen je Akku 220 µF/100 V direkt

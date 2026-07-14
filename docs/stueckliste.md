@@ -7,7 +7,7 @@ Auslegung für **58 … 72 V Systemspannung, 40 A Dauerstrom**.
 
 | Bezeichner | Bauteil | Wert / Typ | Anmerkung |
 |------------|---------|------------|-----------|
-| Q1–Q4 | N-Kanal-MOSFET | **IRF100P219** (TO-220, 100 V, 2,4 mΩ) | Alternative: IPP023N10N5. Anforderung: UDS ≥ 100 V, RDS(on) ≤ 3 mΩ, gut leitend bei UGS = 8 V. **Empfehlung: 8 Stück** (je Zweig zwei Paare parallel, halbiert die Verluste) |
+| Q1–Q4 | N-Kanal-MOSFET | **IRF100P219** (TO-247, 100 V, ≤ 2 mΩ) | Alternative: IPP023N10N5. Anforderung: UDS ≥ 100 V, RDS(on) ≤ 3 mΩ, gut leitend bei UGS = 8 V. **Empfehlung: 8 Stück** (je Zweig zwei Paare parallel, halbiert die Verluste) |
 | OC1, OC2 | Photovoltaik-Gate-Treiber | **VOM1271T** (SOP-4) | liefert potentialfrei ≈ 8,4 V Gate-Spannung, integrierte Schnellentladung. Alternativen: APV1122, TLP3906 (ohne Schnellentladung → externe Entladeschaltung nötig) |
 | U1 | Komparator | **LM393** (DIP-8) | beide Hälften belegt: U1a Differenzkomparator, U1b Inverter; läuft an VCC = 12 V |
 | T1, T2 | NPN-Transistor | **MPSA42** (TO-92, 300 V) | schalten die Treiber-LEDs; Kollektor liegt sperrend an V+ ≈ 72 V → kein BC547! |

@@ -273,12 +273,12 @@ BAT2+ o──[F2]────D─┤├─S────────S─┤├─
 
 - **MOSFET-Anforderungen:** `UDS ≥ 100 V` (71,4 V max. + Reserve für
   Schaltspitzen), `RDS(on) ≤ 3 mΩ`, gut durchgesteuert bei UGS = 8 V
-  (der VOM1271 liefert ca. 8,4 V). Referenztyp IRF100P219 (100 V, 2,4 mΩ);
+  (der VOM1271 liefert ca. 8,4 V). Referenztyp IRF100P219 (TO-247, 100 V, ≤ 2 mΩ);
   Alternative IPP023N10N5.
-- **Verlustleistung bei 40 A:** `P = 40² · 2 · ≈2,7 mΩ ≈ 8,5 W` je aktivem Zweig
+- **Verlustleistung bei 40 A:** `P = 40² · 2 · ≈2,2 mΩ ≈ 7 W` je aktivem Zweig
   (bei UGS 8 V etwas über Datenblattwert) → **dringend empfohlen: je Zweig zwei
   Paare parallel** (8 MOSFETs gesamt, je 10 Ω Einzelgate-Widerstand gegen
-  Schwingen) → ≈ 4,3 W je Zweig, ca. 1 W pro Gehäuse. Kühlkörper ≤ 6 K/W.
+  Schwingen) → ≈ 3,5 W je Zweig, ca. 0,9 W pro Gehäuse. Kühlkörper ≤ 6 K/W.
 - ZD1/ZD2 (15 V, Gate–Source) schützen die Gates vor eingekoppelten Transienten.
 - **Verdrahtungsinduktivität klein halten** (kurze, dicke Leitungen): Beim
   Abschalten unter 40 A erzeugt jede µH Leitungsinduktivität Spannungsspitzen,

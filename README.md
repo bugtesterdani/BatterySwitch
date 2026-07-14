@@ -36,8 +36,8 @@ sind **über je ein Potentiometer getrennt einstellbar**.
 |----------------------------|---------------------------------------------|
 | Systemspannung             | 58 … 72 V DC                                |
 | Dauerstrom                 | 40 A (Spitze kurzzeitig höher)              |
-| Schaltelemente             | antiserielle N-Kanal-MOSFETs je Zweig (IRF100P219, 100 V, 2,4 mΩ) |
-| Verlustleistung bei 40 A   | ca. 8,5 W je Zweig (1 Paar) bzw. 4,3 W (2 Paare parallel, empfohlen) → Kühlkörper |
+| Schaltelemente             | antiserielle N-Kanal-MOSFETs je Zweig (IRF100P219, TO-247, 100 V, ≤ 2 mΩ) |
+| Verlustleistung bei 40 A   | ca. 7 W je Zweig (1 Paar) bzw. 3,5 W (2 Paare parallel, empfohlen) → Kühlkörper |
 | Gate-Ansteuerung           | Photovoltaik-Treiber VOM1271 (potentialfrei, inhärent break-before-make) |
 | Umschaltkriterium          | Differenz U1 − U2 (kein fester Spannungswert) |
 | Δ1 (auf Akku 2 schalten)   | Poti 1, ca. 0,4 … 2,9 V                     |
@@ -53,6 +53,7 @@ sind **über je ein Potentiometer getrennt einstellbar**.
 | [hardware/BatterySwitch.kicad_sch](hardware/BatterySwitch.kicad_sch) | **KiCad-Schaltplan** (KiCad 6/7/8/9, direkt zu öffnen) — Vorschau: [hardware/preview.svg](hardware/preview.svg) |
 | [docs/schaltung.md](docs/schaltung.md) | Vollständige Schaltungsbeschreibung, Schaltbilder, Dimensionierung und Formeln |
 | [docs/stueckliste.md](docs/stueckliste.md) | Stückliste (BOM) mit Bauteilwerten und Alternativen |
+| [docs/bestellliste.md](docs/bestellliste.md) | Bestellliste mit Händlern, Links und ca.-Preisen inkl. MwSt |
 | [docs/aufbau-und-abgleich.md](docs/aufbau-und-abgleich.md) | Aufbauhinweise, Verkabelung, Nullabgleich und Einstellen von Δ1/Δ2 |
 
 ## Sicherheitshinweise
