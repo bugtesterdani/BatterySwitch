@@ -61,8 +61,10 @@ sind **über je ein Potentiometer getrennt einstellbar**.
 
 - **72 V DC ist keine Schutzkleinspannung.** Berührungsschutz vorsehen, nicht
   unter Spannung arbeiten, DC-Lichtbögen beim Trennen unter Last beachten.
-- **Beide Akkus müssen denselben Minuspol (gemeinsame Masse) haben.** Geschaltet
-  wird ausschließlich der Pluspfad (High-Side).
+- **Die Minusleitungen beider Akku-Stecker werden im Umschalter-Kabelbaum mit
+  dem Fahrzeug-Minus verbunden** (gemeinsame Masse nur im Kabelbaum – an den
+  Akkus wird nichts geändert, Einzelbetrieb ohne Board bleibt möglich).
+  Geschaltet wird ausschließlich der Pluspfad (High-Side).
 - Jeder Akku-Anschluss wird **direkt an der Anschlussklemme mit 50 A abgesichert** — Sicherungen mit
   **≥ 80 V DC-Zulassung** (z. B. gPV 14×51). Kfz-Sicherungen (MIDI/MEGA/ANL,
   32 V) sind ungeeignet. Die Sense-Leitungen separat mit 100 mA absichern.

@@ -49,7 +49,7 @@ BAT2+ o────|>|──────┤            [R19a 5,6k / 0,5 W]
                     │                  ZD3 ▲ 13V  ─┴─ C1 100 µF/25 V
                     │                     ─┬─     ─┬─  + C2 100 nF
 GND   o─────────────┴──────────────────────┴──────┴─────────o  GND
-                                        (gemeinsame Masse beider Akkus!)
+                     (Minus beider Akku-Stecker im Kabelbaum verbunden)
 ```
 
 - Zenerstrom: `(V+ − 13 V) / 11,2 kΩ ≈ 4 … 5 mA`

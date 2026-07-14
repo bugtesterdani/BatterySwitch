@@ -33,8 +33,17 @@
   bei 40 A) wirkt nur wie etwas zusätzlicher Lasteinbruch. Damit der Fehler
   symmetrisch bleibt: **beide Akkuzuleitungen gleich ausführen** (Querschnitt,
   Länge, Steckertyp).
-- Beide Akku-Minuspole und der Last-Minus werden **direkt und niederohmig**
-  verbunden (gemeinsame Masse).
+- **Gemeinsame Masse = nur im Umschalter-Kabelbaum:** Die Minus-Pins der
+  beiden Akku-Stecker (X1, X2) werden im Kabelbaum direkt und niederohmig mit
+  dem Fahrzeug-Minus (X3) verbunden. **An den Akkus selbst wird nichts
+  geändert** – zieht man einen Akku ab und steckt ihn direkt ans Fahrzeug,
+  fährt er wie gewohnt ohne Board. Die Verbindung ist nötig, weil der aktive
+  Akku einen Stromrückweg braucht; für den inaktiven Akku ist sie unkritisch
+  (Pluspfad beidseitig gesperrt, über Minus fließen nur ~1,3 mA Sense-Strom,
+  keine Ausgleichsströme).
+- **Betrieb mit nur einem Akku am Board** funktioniert ebenfalls: Der leere
+  Steckplatz liest über den Messteiler 0 V, die Schaltung bleibt dauerhaft
+  auf dem vorhandenen Akku.
 - RV1/RV2 (Frontplatten-Potis) mit kurzen, verdrillten Leitungen anschließen –
   die Knoten sind hochohmig. Beide Messteiler (R1–R4) thermisch benachbart
   platzieren, damit Temperaturdrift gleichsinnig wirkt.
