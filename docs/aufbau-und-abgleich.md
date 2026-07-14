@@ -20,10 +20,14 @@
 - Steuerteil (LM393, Regler, Transistoren) auf normalem Lochraster; Verbindungen
   zum Leistungsteil sind nur die zwei Gate/Source-Paare der VOM1271-Ausgänge
   und Masse. Die VOM1271-Ausgangsleitungen kurz halten und verdrillen.
-- **Beide Sense-Leitungen** (über F3/F4 100 mA) separat vom Lastpfad
-  **direkt an die Batteriepole** führen. Das ist beim Differenzvergleich doppelt
-  wichtig: Spannungsabfälle über Sicherung und Lastkabel des gerade aktiven Akkus
-  gingen sonst direkt als scheinbare Spannungsdifferenz in den Vergleich ein.
+- **Beide Sense-Abgriffe** (über F3/F4 100 mA) **direkt an der Anschlussklemme
+  des jeweiligen Akku-Steckers** abnehmen, vor der Hauptsicherung F1/F2 – nicht
+  irgendwo weiter hinten im Lastpfad. An die Batteriepole selbst muss (und kann)
+  man bei Steckakkus nicht heran: Abfälle hinter dem Abgriff gehen nicht in die
+  Messung ein, und der kleine Abfall über Akkukabel/Steckerkontakt (~0,1–0,3 V
+  bei 40 A) wirkt nur wie etwas zusätzlicher Lasteinbruch. Damit der Fehler
+  symmetrisch bleibt: **beide Akkuzuleitungen gleich ausführen** (Querschnitt,
+  Länge, Steckertyp).
 - Beide Akku-Minuspole und der Last-Minus werden **direkt und niederohmig**
   verbunden (gemeinsame Masse).
 - RV1/RV2 (Frontplatten-Potis) mit kurzen, verdrillten Leitungen anschließen –
@@ -117,7 +121,7 @@ Akkuspannungen (BMS-App/Voltmeter) beobachten; Potis nachführen.
 
 | Symptom | Ursache | Abhilfe |
 |---------|---------|---------|
-| Schaltet häufig hin und her | Δ1+Δ2 kleiner als 2× Lasteinbruch; oder Sense-Leitungen am Lastpfad statt am Pol | Potis Richtung mehr Δ; Sense direkt an die Batteriepole |
+| Schaltet häufig hin und her | Δ1+Δ2 kleiner als 2× Lasteinbruch (inkl. Kabel/Stecker-Abfall); oder Sense-Abgriff hinter F1/F2 statt an der Steckerklemme | Potis Richtung mehr Δ; Sense-Abgriff direkt an die Anschlussklemme legen |
 | Umschaltpunkte stimmen nicht / unsymmetrisch | Nullabgleich fehlt oder verstellt | Abschnitt 3 wiederholen |
 | Δ ändert sich beim Drehen am anderen Poti | prinzipbedingt (feste Zusatzhysterese, 10–25 %) | wechselseitig nachjustieren |
 | MOSFETs werden sofort heiß | UGS zu klein → nicht voll durchgesteuert | Gate-Source ≈ 8 V? VOM1271-LED-Strom ≈ 10 mA? T1/T2 schalten durch? |

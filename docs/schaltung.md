@@ -60,9 +60,15 @@ GND   o─────────────┴──────────�
 ## 2. Messteiler mit Nullabgleich
 
 Beide Akkuspannungen werden mit **identischen Teilern** (÷28) auf das
-Eingangsspannungsniveau des Komparators gebracht. Die Messleitungen (Sense) werden
-**direkt an den Batteriepolen** abgegriffen (über flinke 100-mA-Sicherungen F3/F4 –
-eine gequetschte Sense-Leitung an 72 V ist sonst ein Brandrisiko):
+Eingangsspannungsniveau des Komparators gebracht. Der Sense-Abgriff (über flinke
+100-mA-Sicherungen F3/F4 – eine gequetschte Sense-Leitung an 72 V ist sonst ein
+Brandrisiko) erfolgt **direkt an der Anschlussklemme des Akku-Steckers im
+Umschalter, vor der Hauptsicherung** – an die Batteriepole selbst kommt man bei
+Steckakkus nicht heran, und das ist auch nicht nötig: Abfälle *hinter* dem
+Abgriff (F1/F2, MOSFETs) gehen nicht in die Messung ein. Nur Akkukabel und
+Steckerkontakt *vor* dem Abgriff wirken als kleiner Messfehler (~0,1–0,3 V bei
+40 A, nur beim aktiven Akku) – gleiche Richtung wie der Lasteinbruch, also
+unkritisch, solange beide Zuleitungen ähnlich ausgeführt sind:
 
 ```
 BAT1+ (Sense) o──[F3]──[R1a 27k]──[R1b 27k]──┬─────o  Knoten A  (→ IN+)

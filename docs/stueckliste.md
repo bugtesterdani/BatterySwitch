@@ -65,12 +65,12 @@ Auslegung für **58 … 72 V Systemspannung, 40 A Dauerstrom**.
 | X1, X2 | Super-Soco-Gegenstecker (Akku-Seite), 2× | Anschluss der beiden Akkus an den Umschalter |
 | X3 | Super-Soco-Batteriestecker (Fahrzeug-Seite), 1× | Ausgang des Umschalters zum Fahrzeug/Controller. **Strombelastbarkeit der Stecker für 40 A Dauer prüfen** – Kontakte ggf. verlöten statt crimpen |
 | JP1, JP2 | Jumper / Stiftleiste 2-polig | trennen die Δ-Einspeisungen für den Nullabgleich |
-| F1, F2 | Sicherung 50 A, **≥ 80 V DC** | z. B. gPV 14×51 mm oder NH00 mit Halter. **Kfz-Sicherungen (MIDI/MEGA/ANL) sind nur bis 32 V zugelassen – ungeeignet!** Direkt am Pluspol des jeweiligen Akkus |
-| F3, F4 | Feinsicherung 100 mA flink + Halter | in den beiden Sense-Leitungen, nahe am Batteriepol |
+| F1, F2 | Sicherung 50 A, **≥ 80 V DC** | z. B. gPV 14×51 mm oder NH00 mit Halter. **Kfz-Sicherungen (MIDI/MEGA/ANL) sind nur bis 32 V zugelassen – ungeeignet!** So nah wie möglich an der Anschlussklemme des jeweiligen Akku-Steckers |
+| F3, F4 | Feinsicherung 100 mA flink + Halter | in den beiden Sense-Leitungen, direkt an der Anschlussklemme des Akku-Steckers |
 | KK1 | Kühlkörper ≤ 6 K/W | für die MOSFETs gemeinsam; elektrisch isoliert montieren (Drain = Kühlfahne!) |
 | KK2 | Aufsteckkühlkörper TO-126 | für T5 (MJE340) |
 | – | Leitung 10 mm² | gesamter Lastpfad (BAT+ → Schalter → Last, sowie Masseverbund) |
-| – | Leitung 0,5 mm², 2× | Sense-Leitungen direkt an die Pluspole beider Akkus |
+| – | Leitung 0,5 mm², 2× | Sense-Leitungen von den Anschlussklemmen der Akku-Stecker (vor F1/F2) zur Steuerplatine |
 | – | M8/M6-Ringkabelschuhe, Schraubklemmen ≥ 40 A | Leistungsanschlüsse |
 
 ## Hinweise zur Beschaffung

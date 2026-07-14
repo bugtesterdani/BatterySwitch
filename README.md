@@ -61,11 +61,12 @@ sind **über je ein Potentiometer getrennt einstellbar**.
   unter Spannung arbeiten, DC-Lichtbögen beim Trennen unter Last beachten.
 - **Beide Akkus müssen denselben Minuspol (gemeinsame Masse) haben.** Geschaltet
   wird ausschließlich der Pluspfad (High-Side).
-- Jeder Akku wird **direkt am Pluspol mit 50 A abgesichert** — Sicherungen mit
+- Jeder Akku-Anschluss wird **direkt an der Anschlussklemme mit 50 A abgesichert** — Sicherungen mit
   **≥ 80 V DC-Zulassung** (z. B. gPV 14×51). Kfz-Sicherungen (MIDI/MEGA/ANL,
   32 V) sind ungeeignet. Die Sense-Leitungen separat mit 100 mA absichern.
 - Leitungsquerschnitt für den Lastpfad: mindestens **10 mm²** bei 40 A. Die beiden
-  Sense-Leitungen direkt an die Batteriepole führen.
+  Sense-Abgriffe direkt an den Anschlussklemmen der Akku-Stecker (vor F1/F2),
+  jeweils mit 100 mA abgesichert; beide Akkuzuleitungen gleich ausführen.
 - Während der Umschaltung ist die Last für 5 … 10 ms stromlos
   (Break-before-make). Motorcontroller mit eigenem Zwischenkreis stört das nicht.
 - Die Schaltung vergleicht nur **relativ** — es gibt keinen absoluten

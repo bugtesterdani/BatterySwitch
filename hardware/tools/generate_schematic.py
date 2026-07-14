@@ -280,7 +280,7 @@ note("C8: Stuetzkondensator (5-10 ms Umschalt-Totzeit)", 152, 32)
 
 place("F3", "FUSE", 57, 95, "100mA F (Sense 1)", {"1": "B1P", "2": "S1"}, refpos=(50, 91), valpos=(45, 101))
 place("F4", "FUSE", 57, 107, "100mA F (Sense 2)", {"1": "B2P", "2": "S2"}, refpos=(50, 103), valpos=(45, 113))
-note("Sense-Leitungen direkt am Batteriepol abgreifen!", 72, 97)
+note("Sense-Abgriff direkt an der Akku-Steckerklemme (vor F1/F2)!", 72, 97)
 
 # --------------------------- Abschnitt 2: 12-V-Hilfsspannung ----------------
 text("12-V-Hilfsspannung (VCC) aus V+", 240, 22)
